@@ -18,7 +18,7 @@ function Index(props) {
       //handle submit function for Form
   const handleSubmit = (event) => {
     event.preventDefault();
-    props.createCheese(newForm);
+    props.createCheeses(newForm);
     setNewForm({
       name: "",
       image: "",
@@ -63,8 +63,8 @@ function Index(props) {
         <input
           type="text"
           value={newForm.title}
-          name="title"
-          placeholder="title"
+          name="countryOfOrigin"
+          placeholder="countryOfOrigin"
           onChange={handleChange}
         />
         <input type="submit" value="Create Cheese" />
